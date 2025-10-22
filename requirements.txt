@@ -1,6 +1,7 @@
-langchain
-langchain-google-genai
 google-genai
+langchain-google-genai
+langchain-core           # Yeni LangChain yapısı için
+langchain-community      # Vektör mağazası hatalarını gidermek için kritik
 pypdf
 chromadb
 streamlit

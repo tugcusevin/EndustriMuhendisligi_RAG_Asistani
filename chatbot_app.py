@@ -1,11 +1,9 @@
 import streamlit as st
 import os
-# Gerekli temel LangChain importları
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
-from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import ChatPromptTemplate
-# from langchain_core.documents import Document # Gerekli değil, yorum satırı olarak bırakıldı
-
+from langchain_chroma import Chroma 
+from langchain.chains import RetrievalQA 
 # ----------------- YAPILANDIRMA -----------------
 PERSIST_DIR = "./chroma_db_ai" # Vektör veritabanı klasörünün konumu
 
